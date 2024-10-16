@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Beginner's Guide to HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        p {
+            margin: 15px 0;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.8em;
+            color: #777;
+        }
+        .note {
+            background-color: #e9f7ef;
+            border-left: 5px solid #28a745;
+            padding: 10px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>A Beginner's Guide to HTML and CSS</h1>
+</header>
+
+<article>
+    <h2>Introduction</h2>
+    <p>If you're looking to start your journey into web development, understanding HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) is essential. This guide will walk you through the basics of these technologies, helping you to create your first web page.</p>
+
+    <h2>What is HTML?</h2>
+    <p>HTML is the standard markup language for creating web pages. It describes the structure of a web page using elements represented by tags. Each HTML document is made up of elements that define the content and layout of the page.</p>
+
+    <h3>Basic Structure of an HTML Document</h3>
+    <p>An HTML document has a standard structure, which includes the following:</p>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type.</li>
+        <li><code>&lt;html&gt;</code>: The root element of an HTML page.</li>
+        <li><code>&lt;head&gt;</code>: Contains meta-information about the document, such as the title and links to stylesheets.</li>
+        <li><code>&lt;body&gt;</code>: Contains the content of the document, including text, images, and links.</li>
+    </ul>
+
+    <h3>Example of a Basic HTML Document</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;My First Web Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;p&gt;This is my first web page using HTML!&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h2>What is CSS?</h2>
+    <p>CSS is used to style and layout web pages. It allows you to change colors, fonts, spacing, and positioning of HTML elements. With CSS, you can create visually appealing web pages.</p>
+
+    <h3>How CSS Works</h3>
+    <p>CSS styles can be applied in three ways:</p>
+    <ul>
+        <li><strong>Inline CSS:</strong> Styles are applied directly within an HTML element using the <code>style</code> attribute.</li>
+        <li><strong>Internal CSS:</strong> Styles are defined within a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of the HTML document.</li>
+        <li><strong>External CSS:</strong> Styles are defined in a separate CSS file, which is linked to the HTML document.</li>
+    </ul>
+
+    <h3>Example of Internal CSS</h3>
+    <pre><code>&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Styled Page&lt;/title&gt;
+        &lt;style&gt;
+            body {
+                background-color: #f0f0f0;
+                color: #333;
+            }
+            h1 {
+                color: #007bff;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to My Styled Page&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h2>Creating Your First Web Page</h2>
+    <p>Now that you understand the basics of HTML and CSS, let's create a simple web page. Follow the steps below:</p>
+    <ol>
+        <li>Open a text editor (like Notepad or VSCode).</li>
+        <li>Copy the following HTML code:</li>
+    </ol>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;My First Web Page&lt;/title&gt;
+        &lt;style&gt;
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 {
+                color: #007bff;
+            }
+            p {
+                color: #555;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;This is my first web page styled with CSS.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <ol start="3">
+        <li>Save the file with a <code>.html</code> extension (e.g., <code>index.html</code>).</li>
+        <li>Open the saved file in a web browser to see your first web page!</li>
+    </ol>
+
+    <h2>Resources for Further Learning</h2>
+    <p>To deepen your understanding of HTML and CSS, consider exploring the following resources:</p>
+    <ul>
+        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a>: A comprehensive resource for web development tutorials.</li>
+        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>: Official documentation for web standards.</li>
+        <li><a href="https://css-tricks.com" target="_blank">CSS-Tricks</a>: A blog focused on CSS techniques and tips.</li>
+    </ul>
+
+    <div class="note">
+        <strong>Note:</strong> Practice is key to mastering HTML and CSS. Experiment with different styles and layouts to see what you can create!
+    </div>
+
+    <h2>Conclusion</h2>
+    <p>HTML and CSS are the foundation of web development. By learning these technologies, you open the door to building your own websites and applications. Start experimenting today, and you'll soon be creating beautiful web pages!</p>
+</article>
+
+<footer>
+    <p>&copy; 2024 Your Blog Name</p>
+</footer>
+
+</body>
+</html>
